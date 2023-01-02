@@ -103,9 +103,11 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi="nvim"
-alias vim="nvim"
-alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+#
+source "$HOME/.aliasrc"
+#alias vi="nvim"
+#alias vim="nvim"
+#alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 ### kube-ps1 start
 export KUBE_PS1_SYMBOL_ENABLE=false
