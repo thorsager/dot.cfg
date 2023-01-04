@@ -45,10 +45,16 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
+    use('ray-x/go.nvim')
+    use('ray-x/guihua.lua') -- recommanded if need floating window support
 
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
     }
-    use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+
+    use {
+        "rcarriga/nvim-dap-ui",
+        requires = {"mfussenegger/nvim-dap"}
+    }
 end)
