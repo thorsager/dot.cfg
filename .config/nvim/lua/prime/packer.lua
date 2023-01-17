@@ -65,4 +65,6 @@ return require('packer').startup(function(use)
         requires = {"mfussenegger/nvim-dap"}
     }
 
+    use { "ThePrimeagen/vim-be-good" }
+
 end)
