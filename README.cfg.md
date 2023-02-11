@@ -23,7 +23,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 
-## tmux
+# Tmux
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+to reaload tmux config, in terminal do 
+```bash
+tmux source ~/.tmux.conf
+```
+after this you can do `C-a I` to install plugins

@@ -13,3 +13,9 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>gr", "<cmd>!go run %<CR>", { silent = true })
+
+vim.keymap.set("n", "<Leader>s", function()
+  vim.o.spell = not vim.o.spell
+  vim.o.spelllang = "en,da"
+  print("spell: " .. tostring(vim.o.spell) .. " (" .. tostring(vim.o.spelllang)..")")
+end)
