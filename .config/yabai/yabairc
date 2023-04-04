@@ -1,0 +1,38 @@
+yabai -m config layout bsp
+yabai -m config windown_placement second_child
+
+
+# global settings
+#
+yabai -m config window_border               on
+yabai -m config window_border_width         2
+yabai -m config active_window_border_color  "0xE0808080"
+yabai -m config normal_window_border_color  "0x00010101"
+yabai -m config insert_feedback_color       "0xE02d74da"
+
+
+# padding
+yabai -m  config top_padding 12
+yabai -m  config bottom_padding 12
+yabai -m  config left_padding 12
+yabai -m  config right_padding 12
+yabai -m  config window_gap 12
+
+# mouse setttings
+
+yabai -m config mouse_follows_focus on
+yabai -m config mouse_modifier alt
+# left click + drag
+yabia -m config mouse_action1 move
+# right clik + drag
+yabai -m config mouse_action2 resize
+yabai -m config mouse_drop_action swap
+
+#  disable app
+
+yabai -m rule --add app="^System Settings$" manage=off 
+yabai -m rule --add app="^Linphone$" manage=off 
+yabai -m rule --add app="^JetBrains Toolbox$" manage=off 
+yabai -m rule --add app="^Activity Monitor$" manage=off 
+
+
