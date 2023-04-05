@@ -71,11 +71,11 @@ return require('packer').startup(function(use)
     use { "christoomey/vim-tmux-navigator" }
 
 
-    use {
-        'nvim-orgmode/orgmode', config = function()
-            require('orgmode').setup{}
-        end
-    }
+--    use {
+--        'nvim-orgmode/orgmode', config = function()
+--            require('orgmode').setup{}
+--        end
+--    }
 
     -- install without yarn or npm
     use({
