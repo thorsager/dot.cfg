@@ -31,6 +31,7 @@ yabai -m config mouse_drop_action swap
 #  disable app
 
 yabai -m rule --add app="^System Settings$" manage=off 
+yabai -m rule --add app="^Fusion 360$" manage=off 
 yabai -m rule --add app="^Linphone$" manage=off 
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off 
 yabai -m rule --add app="^Activity Monitor$" manage=off 
