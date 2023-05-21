@@ -38,4 +38,6 @@ yabai -m rule --add app="^Wireshark$" manage=off
 yabai -m rule --add app="^ffplay$" manage=off 
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off 
 yabai -m rule --add app="${JetBrains}" title="${JetBrainsTitle}"  manage=off 
-
+yabai -m rule --add app="^Activity Monitor$" manage=off 
+yabai -m rule --add app="^Finder$" manage=off 
+yabai -m rule --add app="^VLC$" manage=off 
